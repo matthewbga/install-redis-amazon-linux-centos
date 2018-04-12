@@ -20,7 +20,7 @@ sudo yum -y install gcc gcc-c++ make
 echo "*****************************************"
 echo " 2. Download, Untar and Make Redis $version"
 echo "*****************************************"
-sudo wget http://redis.googlecode.com/files/redis-$version.tar.gz
+sudo wget http://download.redis.io/releases/redis-$version.tar.gz
 sudo tar xzf redis-$version.tar.gz
 sudo rm redis-$version.tar.gz -f
 cd redis-$version

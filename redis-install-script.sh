@@ -62,6 +62,9 @@ sudo chkconfig --level 345 redis-server on
 echo "*****************************************"
 echo " 8. Start Redis Server"
 echo "*****************************************"
+sudo echo never > /sys/kernel/mm/transparent_hugepage/enabled
+sudo echo 'vm.overcommit_memory = 1' >> /etc/sysctl.conf
+sudo sysctl vm.overcommit_memory=1
 sudo service redis-server start
 echo "*****************************************"
 echo " Installation Complete!"

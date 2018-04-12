@@ -75,5 +75,5 @@ echo " 3: ... dir /var/lib/redis"
 echo " 4: ... loglevel notice"
 echo " 5: ... logfile /var/log/redis.log"
 echo "*****************************************"
-read -p "Press [Enter] to continue..."
+#read -p "Press [Enter] to continue..."
 
